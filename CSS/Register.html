@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Register</h2>
+            <input type="text" class="input-box" id="register-username" placeholder="Username">
+            <input type="email" class="input-box" id="register-email" placeholder="Email">
+            <input type="password" class="input-box" id="register-password" placeholder="Password">
+            <button class="btn" id="register-btn">Register</button>
+            <p class="switch"><a href="login.html">Already have an account? Login</a></p>
+            <p id="error-message" style="color: rgb(0, 0, 0); display: none;">Please enter all details.</p>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("register-btn").addEventListener("click", function() {
+            let username = document.getElementById("register-username").value.trim();
+            let email = document.getElementById("register-email").value.trim();
+            let password = document.getElementById("register-password").value.trim();
+            let errorMessage = document.getElementById("error-message");
+
+            if (username === "" || email === "" || password === "") {
+                errorMessage.style.display = "block";
+            } else {
+                window.location.href = "thankyou.html";
+            }
+        });
+    </script>
+</body>
+</html>

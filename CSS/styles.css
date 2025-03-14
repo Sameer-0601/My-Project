@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+    background: rgba(20, 20, 40, 0.95);
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #ff69b4;
+    text-shadow: 0 0 10px #ff69b4;
+}
+
+.input-box {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ff69b4;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.input-box:focus {
+    border-color: #ff1493;
+    box-shadow: 0 0 15px #ff1493;
+}
+
+.btn {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #ff1493, #ff69b4);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #ff69b4, #ff1493);
+    box-shadow: 0 0 20px #ff1493;
+}
+
+.switch {
+    margin-top: 15px;
+    color: #ff69b4;
+    text-shadow: 0 0 8px #ff69b4;
+    transition: 0.3s;
+}
+
+.switch a {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+.switch a:hover {
+    text-decoration: underline;
+    color: #ff1493;
+}
